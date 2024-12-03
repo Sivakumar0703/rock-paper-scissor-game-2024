@@ -1,0 +1,83 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: grey;
+}
+
+#game-screen{
+  min-height:100vh;
+  width:100vw;
+  background-image: url("./assets/rcp.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#play-area{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+h1{
+  text-align: center;
+  color: aliceblue;
+}
+
+.btn{
+  padding:5px;
+  border:none;
+  border-radius: 5px;
+  box-shadow: none;
+  cursor: pointer;
+  margin:5px;
+  text-align: center;
+}
+
+#btn-group, #result-section{
+  margin: 10px;
+}
+
+#result-section{
+  color:white
+}
+
+#game-guide{
+  width:250px;
+  height:fit-content;
+  margin: 5px;
+  border:1px solid white;
+  color: white;
+}
+
+#game-guide > * {
+  text-align: center;
+}
+
+.result{
+  font-size: 35px;
+}
+
+@media screen and (max-width:560px){
+  #play-area{
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    color:white
+  }
+
+    #game-guide{
+      font-size:25px;
+      padding:10px;
+      font-weight: bold;
+      
+    }
+
+}
